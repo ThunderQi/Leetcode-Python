@@ -10,6 +10,8 @@ class Solution:
         if (nums.count(target) > 0):
             return nums.index(target)
         else :
-            
+            #二分查找
+            bisect.insort(nums, target)
+            return nums.index(target)
 # @lc code=end
 
